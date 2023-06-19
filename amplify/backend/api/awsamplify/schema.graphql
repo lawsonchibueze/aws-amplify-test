@@ -1,0 +1,6 @@
+type Blogs @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  content: String
+  image: AWSURL
+}

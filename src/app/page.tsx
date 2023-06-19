@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { DataStore } from "@aws-amplify/datastore";
-import { Blogs } from "../../app/models";
+import { Blogs } from "../models";
 
 export default async function Home() {
   const models = await DataStore.query(Blogs);
